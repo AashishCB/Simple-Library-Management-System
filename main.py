@@ -6,6 +6,7 @@ from AddBook import *
 from DeleteBook import *
 from ViewBooks import *
 from IssueBook import *
+from ReturnBook import *
 
 # connecting to the MySql server
 mypass = "A@shish.2"
@@ -42,14 +43,14 @@ headFrame.place(relx = 0.2, rely = 0.1, relwidth = 0.6, relheight = 0.16)
 headLabel = Label(headFrame, text = "Wecome to \n The Library", bg = 'black', fg = 'white', font = ('Courier', 15))
 headLabel.place(relx = 0, rely = 0, relwidth = 1, relheight = 1)
 
-Button(root,text="Add Book Details",bg='black', fg='white', command=None).place(relx=0.28,rely=0.4, relwidth=0.45,relheight=0.1)
+Button(root,text="Add Book Details",bg='black', fg='white', command=addBook).place(relx=0.28,rely=0.4, relwidth=0.45,relheight=0.1)
     
-Button(root,text="Delete Book",bg='black', fg='white', command=None).place(relx=0.28,rely=0.5, relwidth=0.45,relheight=0.1)
+Button(root,text="Delete Book",bg='black', fg='white', command=delete).place(relx=0.28,rely=0.5, relwidth=0.45,relheight=0.1)
         
-Button(root,text="View Book List",bg='black', fg='white', command=None).place(relx=0.28,rely=0.6, relwidth=0.45,relheight=0.1)
+Button(root,text="View Book List",bg='black', fg='white', command=View).place(relx=0.28,rely=0.6, relwidth=0.45,relheight=0.1)
 	    
-Button(root,text="Issue Book to Student",bg='black', fg='white', command = None).place(relx=0.28,rely=0.7, relwidth=0.45,relheight=0.1)
+Button(root,text="Issue Book to Student",bg='black', fg='white', command = issueBook).place(relx=0.28,rely=0.7, relwidth=0.45,relheight=0.1)
        
-Button(root,text="Return Book",bg='black', fg='white', command = None).place(relx=0.28,rely=0.8, relwidth=0.45,relheight=0.1)
+Button(root,text="Return Book",bg='black', fg='white', command = returnBook).place(relx=0.28,rely=0.8, relwidth=0.45,relheight=0.1)
 
 root.mainloop()
