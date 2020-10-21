@@ -29,12 +29,17 @@ follow the video for the further installation process of MySQL Server: https://w
 Remember the name for your database (Ex:MYSQL80 or something that you changed it to) and the password.
 
 After Installation,
+
 -Go to MySQL command line. 
+
 -Enter the password.
+
 -Enter the command ` use [db]; ` [db] shall be replaced by the database name.
+
 Use the below line for creating the table in MySQL command line:
 	
 ` CREATE TABLE books (bid VARCHAR(20) PRIMARY KEY NOT NULL, title VARCHAR(30), author VARCHAR(30), status VARCHAR(30)); `
+
 ` CREATE TABLE books_issued (bid VARCHAR(20) PRIMARY KEY NOT NULL, issuedto VARCHAR(30)); `
 
 Use the following command:
